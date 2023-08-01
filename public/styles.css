@@ -1,29 +1,29 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: monaco, monospace;
   }
   
   .container {
     position: relative;
     background-color: #000;
     color: #fff;
-    height: 100vh;
+    height: 76vh;
   }
   
   .lighting {
     position: absolute;
-    left: 5%;
+    left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-48%);
   }
   
   .lighting img {
-    width: 200px;
-    border-radius: 50%;
+    width: 600px;
+    border-radius: 0%;
   }
   
-  .content {
+  .home_page_content {
     position: absolute;
     top: 50%;
     left: 40%;
@@ -42,39 +42,20 @@ body {
     line-height: 1.5;
   }
   
-  .read-more {
+  .button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
+    margin: 10px;
     margin-top: 20px;
-  }
-  
-  .menu-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     cursor: pointer;
-    display: block;
-    z-index: 2;
-  }
-  
-  .menu-icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-  }
-  
-  #toggle-menu {
-    display: none;
   }
   
   .menu {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
   }
@@ -87,11 +68,51 @@ body {
   
   .menu ul li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .menu ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+  }
+
+  .about-me {
+    background-color: #303030;
+    padding: 400px;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .about-me h2 {
+    font-size: 128px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .about-me p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 200px;
+  }
+  
+  /* Styles for the circular buttons */
+  .circle-button {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    line-height: 80px;
+    margin: 50px;
+    font-size: 14px;
+  }
+  
+  /* Add hover styles to the circular buttons */
+  .circle-button:hover {
+    background-color: #ddd;
+    color: #000;
   }
