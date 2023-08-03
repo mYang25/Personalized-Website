@@ -4,23 +4,29 @@ body {
     font-family: monaco, monospace;
   }
   
-  .container {
+  .home-page {
     position: relative;
     background-color: #000;
     color: #fff;
-    height: 76vh;
+    width: 100vw;
+
   }
   
-  .lighting {
+  .pfp {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  .pfp img{
     position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-48%);
-  }
-  
-  .lighting img {
-    width: 600px;
-    border-radius: 0%;
+    max-width: 100%;
+    left: 15%;
+    height: auto;
+    scale: 2;
+    bottom: 15%;
   }
   
   .home_page_content {
